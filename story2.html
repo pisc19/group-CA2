@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apollo-Soyuz: A Handshake in Orbit — Athenaeum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          espresso: '#2b1b12',
+          'espresso-dark': '#1c110b',
+          cream: '#e8dcc5',
+          amber: '#c9762c',
+          taupe: '#7a6a58',
+          'taupe-light': '#ded0bd',
+          paper: '#fbf7ee',
+        },
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/story.css">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+<body style="--spine:#855740">
+
+<header class="sticky top-0 md:static z-20">
+  <div class="utility-bar hidden md:block">
+    <div class="utility-inner max-w-[1400px] mx-auto px-8 py-3 flex justify-between">
+      <span class="utility-left">A Digital Archive of Human Connection</span>
+      <span class="utility-right">FED CA2 PROJECT · 2026</span>
+    </div>
+  </div>
+
+  <nav class="navbar flex flex-wrap md:grid md:grid-cols-[1fr_auto_1fr] items-center justify-between md:justify-normal gap-1.5 md:gap-5 px-4 md:px-8 py-4 md:py-3 max-w-[1400px] mx-auto">
+    <a href="index.html" class="flex items-center">
+      <svg class="h-10 md:h-11 w-auto aspect-[686/174] block" viewBox="44 20 686 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum — Stories Without Borders">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+        <line x1="210" y1="35" x2="210" y2="185" stroke="#C9A66B" stroke-width="1.5" opacity="0.6"/>
+        <text x="235" y="118" font-family="Georgia, 'Times New Roman', serif"
+              font-size="62" font-weight="bold" letter-spacing="4" fill="#EDE1CC">ATHENAEUM</text>
+        <text x="238" y="152" font-family="Georgia, 'Times New Roman', serif"
+              font-size="19" letter-spacing="4" fill="#C9A66B">stories without borders</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links order-3 md:order-none w-full md:w-auto hidden md:flex md:flex-nowrap gap-[18px] md:gap-8 justify-self-center">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="notice-board.html">Notice Board</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="flex items-center gap-3 justify-self-end">
+      <a href="stories.html" class="nav-progress">
+        <svg class="nav-progress-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 5c3-1.5 6-1.5 8 0c2-1.5 5-1.5 8 0v13c-3-1.5-6-1.5-8 0c-2-1.5-5-1.5-8 0z"/>
+          <line x1="12" y1="5" x2="12" y2="18"></line>
+        </svg>
+        <span><span class="nav-progress-count" id="progressCount">0/8</span><span class="hidden md:inline"> Explored</span></span>
+      </a>
+      <button type="button" class="nav-toggle md:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="story-hero">
+  <div class="story-hero-bg" style="background-image:url('images/10-apollo-soyuz-docking-1975.jpg__1536x0_q75_crop-scale_subsampling-2_upscale-false.jpg')"></div>
+  <div class="story-hero-overlay"></div>
+
+  <a href="index.html#collection" class="story-back">&larr; Back to the Collection</a>
+  <p class="story-hero-credit">Photo: thejewelleryeditor.com</p>
+
+  <div class="story-hero-content reveal reveal-immediate">
+    <p class="eyebrow">United States &#8646; Soviet Union</p>
+    <h1 class="story-title">Apollo-Soyuz: A Handshake in Orbit</h1>
+    <p class="story-dek">At the height of the Cold War, an American and a Soviet spacecraft docked in orbit, and their commanders shook hands through the open hatch.</p>
+  </div>
+</section>
+
+<article class="max-w-[900px] mx-auto px-8 py-16 pb-24 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-14">
+  <h2 class="sr-only">Full Story</h2>
+  <aside class="story-facts reveal">
+    <h2>Quick Facts</h2>
+    <dl>
+      <dt>When</dt>
+      <dd>15–17 July 1975</dd>
+      <dt>Where</dt>
+      <dd>Earth orbit, about 225 km up</dd>
+      <dt>Who</dt>
+      <dd>3 NASA astronauts &amp; 2 Soviet cosmonauts</dd>
+      <dt>Remembered for</dt>
+      <dd>The first joint US–Soviet spaceflight, and the handshake that sealed it</dd>
+    </dl>
+  </aside>
+
+  <div class="story-content reveal">
+    <p>For most of the 1960s, the United States and the Soviet Union raced each other to space as an extension of the Cold War — Sputnik, Gagarin, the Moon landing, all of it scored like a rivalry. By the early 1970s, though, a period of easing tensions known as détente opened the door to something neither side's rocket program had ever attempted: doing it together.</p>
+
+    <p>The two countries' spacecraft weren't built to connect — different atmospheres, different docking hardware, different everything — so engineers designed a special adapter module just to let an American Apollo capsule and a Soviet Soyuz capsule link up in orbit. On 17 July 1975, they did. Apollo commander Tom Stafford and Soyuz commander Alexei Leonov opened the hatch between their two spacecraft and shook hands, live on television, 225 kilometers above a planet still very much divided.</p>
+
+    <blockquote class="pull-quote">Three hundred kilometers above a divided planet, two crews who'd trained for years to beat each other instead reached out and shook hands.</blockquote>
+
+    <p>The crews spent nearly two days together — sharing meals, swapping gifts, running joint experiments, and doing interviews in each other's language, since both crews had spent months learning enough Russian and English to talk to one another without translators. Stafford's Oklahoma-accented Russian reportedly amused Leonov enough that the Soviet crew joked they were speaking a new language: "Oklahomski."</p>
+
+    <p>The mission didn't end the Cold War, and the two space programs went back to mostly working apart for another two decades. But it planted the idea that former rivals could share a spacecraft — and it's a straight line from that handshake to the Shuttle-Mir missions of the 1990s and the International Space Station that followed, where American and Russian crews have lived and worked together continuously ever since.</p>
+
+    <div class="story-reactions-inline">
+      <span class="story-reactions-label">Reactions</span>
+      <button type="button" class="reaction-btn" data-emoji="&#x1F54A;&#xFE0F;"><span>&#x1F54A;&#xFE0F;</span><span class="reaction-count">0</span></button>
+      <button type="button" class="reaction-btn" data-emoji="&#x2764;&#xFE0F;"><span>&#x2764;&#xFE0F;</span><span class="reaction-count">0</span></button>
+      <button type="button" class="reaction-btn" data-emoji="&#x1F62E;"><span>&#x1F62E;</span><span class="reaction-count">0</span></button>
+      <button type="button" class="reaction-btn" data-emoji="&#x1F64F;"><span>&#x1F64F;</span><span class="reaction-count">0</span></button>
+    </div>
+  </div>
+</article>
+
+<section class="story-picks reveal">
+  <div class="story-picks-inner">
+    <h3>From the Notice Board</h3>
+    <p class="story-picks-sub">Notes visitors pinned to the board after this story inspired them.</p>
+    <div class="story-picks-grid" id="storyPicksGrid"></div>
+    <p class="story-picks-empty" id="storyPicksEmpty">No notes pinned for this story yet &mdash; <a href="notice-board.html">be the first &rarr;</a></p>
+  </div>
+</section>
+
+<nav class="story-next" aria-label="Next story">
+  <a href="story3.html" class="story-next-link">
+    <div class="story-next-text">
+      <span class="story-next-label">Next Chapter</span>
+      <span class="story-next-title">The Fall of the Berlin Wall</span>
+      <span class="story-next-year">1989</span>
+    </div>
+    <span class="story-next-arrow" aria-hidden="true">&rarr;</span>
+  </a>
+</nav>
+
+<footer class="site-footer">
+  <div class="max-w-[1400px] mx-auto px-8 pt-16 pb-10 grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-9 md:gap-12">
+    <div class="footer-brand">
+      <svg class="h-11 w-auto mb-4" viewBox="44 20 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+      </svg>
+      <p class="footer-tagline">stories without borders</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul class="flex flex-col gap-3">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="notice-board.html">Notice Board</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Connect</h3>
+      <div class="footer-social flex gap-3.5">
+        <a href="mailto:athenaeumoffical@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+        <a href="https://www.instagram.com/athenaeumoffical" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom py-5 px-8">
+    <p class="max-w-[1400px] mx-auto">&copy; 2026 Athenaeum &middot; FED CA2 PROJECT &middot; David Alcina Tavier Jeongwon</p>
+  </div>
+</footer>
+
+<script src="js/story-engage.js"></script>
+<script src="js/notes-render.js"></script>
+<script src="js/story-picks.js"></script>
+<script src="js/scroll-reveal.js"></script>
+<script src="js/reading-progress.js"></script>
+<script src="js/nav-toggle.js"></script>
+</body>
+</html>

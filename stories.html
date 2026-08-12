@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stories — Athenaeum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          espresso: '#2b1b12',
+          'espresso-dark': '#1c110b',
+          cream: '#e8dcc5',
+          amber: '#c9762c',
+          taupe: '#7a6a58',
+          'taupe-light': '#ded0bd',
+          paper: '#fbf7ee',
+        },
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/story.css">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+<body>
+
+<header class="sticky top-0 md:static z-20">
+  <div class="utility-bar hidden md:block">
+    <div class="utility-inner max-w-[1400px] mx-auto px-8 py-3 flex justify-between">
+      <span class="utility-left">A Digital Archive of Human Connection</span>
+      <span class="utility-right">FED CA2 PROJECT · 2026</span>
+    </div>
+  </div>
+
+  <nav class="navbar flex flex-wrap md:grid md:grid-cols-[1fr_auto_1fr] items-center justify-between md:justify-normal gap-1.5 md:gap-5 px-4 md:px-8 py-4 md:py-3 max-w-[1400px] mx-auto">
+    <a href="index.html" class="flex items-center">
+      <svg class="h-10 md:h-11 w-auto aspect-[686/174] block" viewBox="44 20 686 174" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum — Stories Without Borders">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+        <line x1="210" y1="35" x2="210" y2="185" stroke="#C9A66B" stroke-width="1.5" opacity="0.6"/>
+        <text x="235" y="118" font-family="Georgia, 'Times New Roman', serif"
+              font-size="62" font-weight="bold" letter-spacing="4" fill="#EDE1CC">ATHENAEUM</text>
+        <text x="238" y="152" font-family="Georgia, 'Times New Roman', serif"
+              font-size="19" letter-spacing="4" fill="#C9A66B">stories without borders</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links order-3 md:order-none w-full md:w-auto hidden md:flex md:flex-nowrap gap-[18px] md:gap-8 justify-self-center">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stories.html" class="active">Stories</a></li>
+      <li><a href="notice-board.html">Notice Board</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="flex items-center gap-3 justify-self-end">
+      <a href="stories.html" class="nav-progress">
+        <svg class="nav-progress-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 5c3-1.5 6-1.5 8 0c2-1.5 5-1.5 8 0v13c-3-1.5-6-1.5-8 0c-2-1.5-5-1.5-8 0z"/>
+          <line x1="12" y1="5" x2="12" y2="18"></line>
+        </svg>
+        <span><span class="nav-progress-count" id="progressCount">0/8</span><span class="hidden md:inline"> Explored</span></span>
+      </a>
+      <button type="button" class="nav-toggle md:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero text-center px-8 pt-[90px] pb-[70px]">
+  <div class="page-hero-text reveal reveal-immediate">
+    <p class="eyebrow">The Collection</p>
+    <h1>Eight True Stories</h1>
+    <p class="page-hero-sub">From a Christmas truce in the trenches to an earthquake response ninety countries deep — scroll through, oldest to newest.</p>
+  </div>
+</section>
+
+<section class="story-list-section">
+  <div class="story-timeline">
+
+    <div class="timeline-row reveal" style="--spine:#625334">
+      <div class="timeline-node"></div>
+      <a href="story1.html" class="timeline-row-media">
+        <img class="img-main" src="images/web-xmas-truce-1-ap.avif" alt="Soldiers meeting in no man's land during the Christmas Truce of 1914">
+        <img class="img-alt" src="images/xmas-truce-hover.webp" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: apnews.com</span>
+        <span class="timeline-row-credit credit-alt">Photo: britannica.com</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">1914</span>
+        <h2>The Christmas Truce</h2>
+        <p>Soldiers on the Western Front laid down their rifles for one unordered night of peace.</p>
+        <a href="story1.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#855740">
+      <div class="timeline-node"></div>
+      <a href="story2.html" class="timeline-row-media">
+        <img class="img-main" src="images/10-apollo-soyuz-docking-1975.jpg__1536x0_q75_crop-scale_subsampling-2_upscale-false.jpg" alt="Apollo and Soyuz spacecraft docked together in orbit, 1975">
+        <img class="img-alt" src="images/ast-005-298.webp" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: thejewelleryeditor.com</span>
+        <span class="timeline-row-credit credit-alt">Photo: smithsonianmag.com</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">1975</span>
+        <h2>A Handshake in Orbit</h2>
+        <p>At the height of the Cold War, two rival space programs docked in orbit and shook hands.</p>
+        <a href="story2.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#5c5347">
+      <div class="timeline-node"></div>
+      <a href="story3.html" class="timeline-row-media">
+        <img class="img-main" src="images/27-BerlinWall-Getty.avif" alt="Crowds celebrating on the Berlin Wall in 1989">
+        <img class="img-alt" src="images/fall-berlin-wall-1989-with-crowds-celebrating-end-cold-war_1314467-81651.avif" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: gettyimages.com</span>
+        <span class="timeline-row-credit credit-alt">Photo: medium.com</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">1989</span>
+        <h2>The Wall Comes Down</h2>
+        <p>After 28 years of division, strangers from both sides climbed the wall together and tore it down.</p>
+        <a href="story3.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#e0954f">
+      <div class="timeline-node"></div>
+      <a href="story4.html" class="timeline-row-media">
+        <img class="img-main" src="images/iss_nasa.webp" alt="The International Space Station in orbit above Earth">
+        <img class="img-alt" src="images/First_Crew_to_ISS_Highlights_pillars.jpg" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: nasa.gov</span>
+        <span class="timeline-row-credit credit-alt">Photo: techinsider.ru</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">1998</span>
+        <h2>One Station, Fifteen Nations</h2>
+        <p>Cold War rivals spent over a decade bolting their separately built modules into a single home in orbit.</p>
+        <a href="story4.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#6b3a14">
+      <div class="timeline-node"></div>
+      <a href="story5.html" class="timeline-row-media">
+        <img class="img-main" src="images/350-51186070485_2703618fdc_o-1-768x512.jpg" alt="Press announcement of the completed human genome sequence, with the Nature magazine cover on display">
+        <img class="img-alt" src="images/bermuda_1996_edited_test_0.jpg" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: yourgenome.org</span>
+        <span class="timeline-row-credit credit-alt">Photo: annualreviews.org</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">2003</span>
+        <h2>One Genome, Six Nations</h2>
+        <p>Scientists on three continents agreed to give away everything they found about human DNA, for free.</p>
+        <a href="story5.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#a68b36">
+      <div class="timeline-node"></div>
+      <a href="story6.html" class="timeline-row-media">
+        <img class="img-main" src="images/Juan-Illanes-third-Chilean-miner-rescued-October-13-2010.webp" alt="One of the 33 Chilean miners being rescued in 2010">
+        <img class="img-alt" src="images/download.jpg" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: britannica.com</span>
+        <span class="timeline-row-credit credit-alt">Photo: sandiegouniontribune.com</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">2010</span>
+        <h2>The Rescue of the 33</h2>
+        <p>Engineers and specialists from a dozen countries raced together to save 33 trapped Chilean miners.</p>
+        <a href="story6.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#9c3d42">
+      <div class="timeline-node"></div>
+      <a href="story7.html" class="timeline-row-media">
+        <img class="img-main" src="images/4e511782-20ef-41ef-9a3d-3b52d34ba697_38766910.webp" alt="The unified Korean team at the 2018 Winter Olympics">
+        <img class="img-alt" src="images/Shutterstock_9437274eb.jpg" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: scmp.com</span>
+        <span class="timeline-row-credit credit-alt">Photo: cnn.com</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">2018</span>
+        <h2>One Flag, Two Koreas</h2>
+        <p>Two nations still technically at war marched under one flag and skated as one team at the Olympics.</p>
+        <a href="story7.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+    <div class="timeline-row reveal" style="--spine:#b96a28">
+      <div class="timeline-node"></div>
+      <a href="story8.html" class="timeline-row-media">
+        <img class="img-main" src="images/2048c0b1-eb4b-4360-bc7d-6964f1807de1.jpg" alt="Rescuers pulling a survivor from rubble after the 2023 Turkey-Syria earthquake">
+        <img class="img-alt" src="images/0x0.webp" alt="" aria-hidden="true">
+        <span class="timeline-row-credit credit-main">Photo: caixinglobal.com</span>
+        <span class="timeline-row-credit credit-alt">Photo: forbes.com</span>
+      </a>
+      <div class="timeline-row-content">
+        <span class="timeline-row-year">2023</span>
+        <h2>One Disaster, Ninety Nations</h2>
+        <p>After the T&uuml;rkiye&ndash;Syria earthquake, rescue teams arrived from neighbours who hadn't spoken in decades.</p>
+        <a href="story8.html" class="timeline-row-link">Read the story &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="max-w-[1400px] mx-auto px-8 pt-16 pb-10 grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-9 md:gap-12">
+    <div class="footer-brand">
+      <svg class="h-11 w-auto mb-4" viewBox="44 20 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athenaeum">
+        <g transform="translate(20,10) scale(0.4)">
+          <circle cx="250" cy="215" r="170" fill="none" stroke="#C9A66B" stroke-width="2.5"/>
+          <circle cx="250" cy="215" r="152" fill="none" stroke="#C9A66B" stroke-width="1" opacity="0.55"/>
+          <path d="M 140 150 L 250 90 L 360 150 Z" fill="none" stroke="#EDE1CC" stroke-width="4.5" stroke-linejoin="round"/>
+          <line x1="128" y1="150" x2="372" y2="150" stroke="#EDE1CC" stroke-width="6"/>
+          <g stroke="#EDE1CC" stroke-width="6" stroke-linecap="round">
+            <line x1="152" y1="160" x2="152" y2="255"/>
+            <line x1="188" y1="160" x2="188" y2="255"/>
+            <line x1="224" y1="160" x2="224" y2="255"/>
+            <line x1="276" y1="160" x2="276" y2="255"/>
+            <line x1="312" y1="160" x2="312" y2="255"/>
+            <line x1="348" y1="160" x2="348" y2="255"/>
+          </g>
+          <g fill="#EDE1CC">
+            <rect x="144" y="153" width="16" height="8" rx="1"/>
+            <rect x="180" y="153" width="16" height="8" rx="1"/>
+            <rect x="216" y="153" width="16" height="8" rx="1"/>
+            <rect x="268" y="153" width="16" height="8" rx="1"/>
+            <rect x="304" y="153" width="16" height="8" rx="1"/>
+            <rect x="340" y="153" width="16" height="8" rx="1"/>
+          </g>
+          <rect x="128" y="255" width="244" height="10" fill="#EDE1CC"/>
+          <rect x="118" y="265" width="264" height="10" fill="#EDE1CC" opacity="0.85"/>
+          <g transform="translate(250,222)">
+            <path d="M -62 -6 C -40 -20 -18 -20 0 -8 C 18 -20 40 -20 62 -6 L 62 20 C 40 8 18 8 0 18 C -18 8 -40 8 -62 20 Z"
+                  fill="#2B1B12" stroke="#C9A66B" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-8" x2="0" y2="18" stroke="#C9A66B" stroke-width="3"/>
+            <path d="M -50 -2 C -34 -10 -18 -10 -4 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M -50 6 C -34 -2 -18 -2 -4 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 -2 C 18 -10 34 -10 50 -2" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+            <path d="M 4 6 C 18 -2 34 -2 50 6" fill="none" stroke="#C9A66B" stroke-width="2" opacity="0.8"/>
+          </g>
+          <g stroke="#C9A66B" stroke-width="2.2" fill="none" opacity="0.9">
+            <path d="M 172 275 C 150 300 148 330 165 350"/>
+            <path d="M 328 275 C 350 300 352 330 335 350"/>
+          </g>
+        </g>
+      </svg>
+      <p class="footer-tagline">stories without borders</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul class="flex flex-col gap-3">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="notice-board.html">Notice Board</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Connect</h3>
+      <div class="footer-social flex gap-3.5">
+        <a href="mailto:athenaeumoffical@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+        <a href="https://www.instagram.com/athenaeumoffical" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom py-5 px-8">
+    <p class="max-w-[1400px] mx-auto">&copy; 2026 Athenaeum &middot; FED CA2 PROJECT &middot; David Alcina Tavier Jeongwon</p>
+  </div>
+</footer>
+
+<script src="js/scroll-reveal.js"></script>
+<script src="js/reading-progress.js"></script>
+<script src="js/nav-toggle.js"></script>
+</body>
+</html>
